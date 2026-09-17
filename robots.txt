@@ -1,0 +1,10 @@
+# robots.txt for parroquiasjc.org
+# Every public page is open and indexable, including AI search and user fetch agents.
+# The parish office information pages under /info/ carry a noindex meta tag; they are
+# deliberately left crawlable so that the noindex tag can actually be read.
+
+User-agent: *
+Allow: /
+
+# AI guide: /llms.txt
+Sitemap: https://parroquiasjc.org/sitemap.xml

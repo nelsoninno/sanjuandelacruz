@@ -1,0 +1,36 @@
+/* tokens.css - colors + fonts ONLY. The one file to edit to re-skin this site.
+   Palette taken from the parish logo (#45260A) and their social graphics
+   (deep chocolate brown, cream, warm gold). */
+:root{
+  /* Brand */
+  --brown:        #45260A;   /* the logo brown, primary brand color */
+  --brown-deep:   #2E1806;   /* deepest brown, footer + hero scrim */
+  --brown-soft:   #6B4526;   /* mid brown, borders and secondary surfaces */
+  --gold:         #B08843;   /* accent, links and small rules */
+  --gold-soft:    #D8BE8A;   /* accent on dark backgrounds */
+
+  /* Page */
+  --bg:           #FBF8F3;   /* page background, warm off white */
+  --surface:      #F2EADD;   /* cards and alternating sections */
+  --surface-2:    #EAE0CF;   /* deeper cream */
+  --ink:          #2B1C10;   /* main text */
+  --muted:        #6E5A48;   /* secondary text */
+  --line:         #E3D6C2;   /* hairlines on light backgrounds */
+  --line-dark:    #5C3E22;   /* hairlines on dark backgrounds */
+
+  /* Feedback */
+  --pending-bg:   #FBF1DC;   /* "por confirmar" note background */
+  --pending-line: #D9BF86;
+
+  /* Footer credit colors, read by the EKY logo */
+  --footer-bg:    #2E1806;
+  --footer-fg:    #F2EADD;
+
+  /* Fonts */
+  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body:    'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --max: 1160px;
+  --max-text: 720px;
+}

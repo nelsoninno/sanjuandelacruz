@@ -1,0 +1,9 @@
+# Never publish: the repository root is served as the live website.
+_source/
+brand/
+CLAUDE.md
+tools/
+*.py
+*.sh
+.DS_Store
+Thumbs.db
