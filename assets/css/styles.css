@@ -296,7 +296,18 @@ hr{border:0;border-top:1px solid var(--line);margin:2.5rem 0}
 /* A band whose job is the photograph rather than a line of text over it.
    The plain .band dims the image to 45% so the quote stays readable; here the
    picture carries the section on its own, so it keeps its own light. */
-.band--photo{height:clamp(220px,32vw,440px)}
+/* Height follows the photograph's own shape instead of a fixed clamp, so a wide
+   screen does not slice the top and bottom off the picture. --band-ar carries
+   the source ratio: 3/1 for the purpose-cropped band files, 2/1 for a 3:2
+   photograph borrowed from the gallery. */
+.band--photo{
+  height:auto;aspect-ratio:var(--band-ar,3/1);
+  /* Pin the width to the page. Without this, a min-height or max-height would
+     make the aspect-ratio resize the WIDTH instead: too wide at phone sizes
+     (horizontal scroll) and too narrow on a very large screen. */
+  min-width:100%;max-width:100%;
+  min-height:clamp(190px,30vw,240px);max-height:min(78vh,860px);
+}
 .band--photo img{opacity:1}
 .band--photo::after{background:linear-gradient(180deg,rgba(46,24,6,.06),rgba(46,24,6,.2))}
 
