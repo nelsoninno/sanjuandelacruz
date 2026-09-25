@@ -6,7 +6,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://parroquiasjc.org/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://parroquiasjc.org/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://parroquiasjc.org/"/>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,7 +15,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://parroquiasjc.org/historia.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://parroquiasjc.org/en/history.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://parroquiasjc.org/historia.html"/>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -24,7 +24,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://parroquiasjc.org/comunidades.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://parroquiasjc.org/en/communities.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://parroquiasjc.org/comunidades.html"/>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -33,7 +33,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://parroquiasjc.org/sacramentos.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://parroquiasjc.org/en/sacraments.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://parroquiasjc.org/sacramentos.html"/>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -42,7 +42,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://parroquiasjc.org/contacto.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://parroquiasjc.org/en/contact.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://parroquiasjc.org/contacto.html"/>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -51,7 +51,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://parroquiasjc.org/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://parroquiasjc.org/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://parroquiasjc.org/"/>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -60,7 +60,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://parroquiasjc.org/historia.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://parroquiasjc.org/en/history.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://parroquiasjc.org/historia.html"/>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -69,7 +69,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://parroquiasjc.org/comunidades.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://parroquiasjc.org/en/communities.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://parroquiasjc.org/comunidades.html"/>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -78,7 +78,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://parroquiasjc.org/sacramentos.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://parroquiasjc.org/en/sacraments.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://parroquiasjc.org/sacramentos.html"/>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -87,19 +87,19 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://parroquiasjc.org/contacto.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://parroquiasjc.org/en/contact.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://parroquiasjc.org/contacto.html"/>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://parroquiasjc.org/llms.txt</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://parroquiasjc.org/llms-full.txt</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

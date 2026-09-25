@@ -160,6 +160,30 @@ hr{border:0;border-top:1px solid var(--line);margin:2.5rem 0}
 .hours .t{font-family:var(--font-display);font-size:1.16rem;font-weight:600;text-align:right;flex:0 0 auto;max-width:58%}
 .section--dark .hours .t{color:var(--gold-soft)}
 
+/* ---------- at a glance: the mass times strip under the hero ----------
+   Deliberately the first thing after the hero. Most visitors come for one
+   question, "what time is Mass", and should not have to scroll for it. */
+.glance{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:1px;background:var(--line);border:1px solid var(--line);
+  border-radius:3px;overflow:hidden;margin-top:2.2rem;
+}
+.glance > div{background:var(--bg);padding:1.3rem clamp(1.1rem,2vw,1.5rem)}
+.glance .d{
+  display:block;font-size:.7rem;font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--muted);
+}
+.glance .t{
+  display:block;font-family:var(--font-display);font-weight:600;
+  font-size:clamp(1.05rem,1.5vw,1.24rem);line-height:1.45;color:var(--brown);
+  margin-top:.35rem;text-wrap:balance;
+}
+.glance__note{
+  margin-top:1.5rem;font-size:.95rem;color:var(--muted);
+  border-left:2px solid var(--gold);padding-left:1rem;
+}
+.glance__note strong{color:var(--ink);font-weight:600}
+
 /* ---------- mass times ---------- */
 .mass{list-style:none;padding:0;margin-top:.6rem}
 .mass li{padding:.8rem 0;border-bottom:1px solid var(--line)}
@@ -269,6 +293,13 @@ hr{border:0;border-top:1px solid var(--line);margin:2.5rem 0}
   content:"";position:absolute;inset:0;
   background:linear-gradient(180deg,rgba(46,24,6,.5),rgba(46,24,6,.72));
 }
+/* A band whose job is the photograph rather than a line of text over it.
+   The plain .band dims the image to 45% so the quote stays readable; here the
+   picture carries the section on its own, so it keeps its own light. */
+.band--photo{height:clamp(220px,32vw,440px)}
+.band--photo img{opacity:1}
+.band--photo::after{background:linear-gradient(180deg,rgba(46,24,6,.06),rgba(46,24,6,.2))}
+
 .band__text{
   position:relative;z-index:2;text-align:center;
   font-family:var(--font-display);font-size:clamp(1.35rem,3.2vw,2.2rem);
