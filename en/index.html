@@ -44,8 +44,8 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"></noscript>
-<link rel="stylesheet" href="../assets/css/tokens.css">
-<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="stylesheet" href="../assets/css/tokens.css?v=20261009">
+<link rel="stylesheet" href="../assets/css/styles.css?v=20261009">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -375,38 +375,40 @@
 </header>
 <main id="main">
 
-<section class="hero">
-  <div class="hero__media">
-    <img src="../assets/images/hero/hero-interior-templo-parroquia-san-juan-de-la-cruz-parroquiasjc.org.webp" srcset="../assets/images/hero/hero-interior-templo-parroquia-san-juan-de-la-cruz-parroquiasjc.org-1000.webp 1000w, ../assets/images/hero/hero-interior-templo-parroquia-san-juan-de-la-cruz-parroquiasjc.org.webp 1800w" sizes="(max-width: 900px) 100vw, 1160px" alt="Interior of Parroquia San Juan de la Cruz seen from the central aisle" width="1800" height="1200" fetchpriority="high">
-  </div>
-  <div class="wrap hero__inner">
-    <p class="eyebrow">Discalced Carmelites <span aria-hidden="true">·</span> Nuevo Cuscatlán, El Salvador</p>
-    <h1>Parroquia San Juan de la Cruz, Nuevo Cuscatlán</h1>
-    <p class="hero__sub">A house of prayer, of encounter, of celebration and of community, in the care of the Discalced Carmelite friars. The church opens every day at 6:00 in the morning.</p>
-    <div class="hero__actions">
-      <a class="btn btn--light" href="#horarios">All schedules</a>
-      <a class="btn btn--ghost" href="contact.html">How to find us</a>
+<section class="hero-home">
+  <div class="wrap hero-home__grid">
+    <div class="hero-home__text">
+      <p class="eyebrow">Discalced Carmelites <span aria-hidden="true">·</span> Nuevo Cuscatlán, El Salvador</p>
+      <h1>Parroquia San Juan de la Cruz,<span class="h1-place">Nuevo Cuscatlán</span></h1>
+      <p class="hero-home__sub">A house of prayer, of encounter, of celebration and of community, in the care of the Discalced Carmelite friars. The church opens every day at 6:00 in the morning.</p>
+      <div class="hero__actions">
+        <a class="btn" href="#horarios"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>All schedules</a>
+        <a class="btn btn--outline" href="https://wa.me/50379879987?text=Hola%2C%20buen%20d%C3%ADa.%20Quisiera%20informaci%C3%B3n%20de%20la%20parroquia." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9h8M8 12h5"/></svg>Message on WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-home__visual">
+      <div class="arch">
+        <img src="../assets/images/hero/hero-interior-templo-parroquia-san-juan-de-la-cruz-parroquiasjc.org.webp" srcset="../assets/images/hero/hero-interior-templo-parroquia-san-juan-de-la-cruz-parroquiasjc.org-1000.webp 1000w, ../assets/images/hero/hero-interior-templo-parroquia-san-juan-de-la-cruz-parroquiasjc.org.webp 1800w" sizes="(max-width: 900px) 100vw, 1160px" alt="Inside Parroquia San Juan de la Cruz from the central aisle, with the risen Christ and the crucifix" width="1800" height="1200" fetchpriority="high">
+      </div>
+      <!-- Without JavaScript this card only points to the schedule below. With
+           it, main.js fills in today's Masses, read from #horarios. -->
+      <aside class="today" id="hoy" aria-live="polite">
+        <div class="today__label"><i aria-hidden="true"></i><span>Mass times</span></div>
+        <div class="today__day">There is Mass every day</div>
+        <ul class="today__list" hidden></ul>
+        <p class="today__note">The full schedule for every day is below.</p>
+        <div class="today__office" hidden><span class="dot" aria-hidden="true"></span><span></span></div>
+        <div class="today__go">
+          <a class="btn btn--outline" href="https://waze.com/ul?ll=13.64368,-89.2807286&amp;navigate=yes" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Waze</a>
+          <a class="btn btn--outline" href="https://www.google.com/maps/dir/?api=1&amp;destination=13.64368,-89.2807286" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Google Maps</a>
+        </div>
+        <a class="today__more" href="#horarios">See all schedules</a>
+      </aside>
     </div>
   </div>
 </section>
 
-<section class="section section--tight section--cream">
-  <div class="wrap">
-    <p class="eyebrow">At a glance</p>
-    <h2>Mass times</h2>
-    <div class="rule"></div>
-    <div class="glance">
-      <div><span class="d">Sunday</span><span class="t">7:00 · 9:00 · 11:00&nbsp;a.m. · 5:00 · 7:00&nbsp;p.m.</span></div>
-      <div><span class="d">Monday to Friday</span><span class="t">7:00&nbsp;a.m. · 6:00&nbsp;p.m.</span></div>
-      <div><span class="d">Thursday</span><span class="t">7:00 · 11:00&nbsp;a.m. · 6:00&nbsp;p.m.</span></div>
-      <div><span class="d">Saturday</span><span class="t">7:00&nbsp;a.m. · 12:00&nbsp;noon · 6:00&nbsp;p.m.</span></div>
-    </div>
-    <p class="glance__note"><strong>Confession:</strong> on Thursdays, during the 7:00 a.m. and 6:00 p.m. Masses. At the weekend, during every Sunday Mass, starting with the Saturday 12:00 noon Mass.</p>
-    <p style="margin-top:1.6rem"><a href="#horarios">See the full church and office hours</a></p>
-  </div>
-</section>
-
-<section class="section">
+<section class="section section--cream">
   <div class="wrap split">
     <div class="split__media split__media--tall reveal">
       <img src="../assets/images/gallery/imagen-de-san-juan-de-la-cruz-parroquia-san-juan-de-la-cruz-parroquiasjc.org.webp" alt="Image of Saint John of the Cross inside the parish church" loading="lazy" width="1200" height="900">
@@ -434,30 +436,32 @@
     <div class="grid grid--2" style="margin-top:2.8rem">
       <div class="card card--dark reveal">
         <p class="card__meta">Holy Mass</p>
-        <h3>Mass times</h3>
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2v4M10 4h4"/><path d="M5 21V11l7-5 7 5v10"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/><path d="M3 21h18"/></svg>Mass times</h3>
+        <!-- data-days: 0 Sunday ... 6 Saturday. The "Today" card reads the times
+             straight from each row's text: change a time here and it follows. -->
         <ul class="mass">
-          <li><span class="d">Sunday</span><span class="t">7:00 a.m. · 9:00 a.m. · 11:00 a.m. · 5:00 p.m. · 7:00 p.m.</span></li>
-          <li><span class="d">Monday to Friday</span><span class="t">7:00 a.m. · 6:00 p.m.</span></li>
-          <li><span class="d">Thursday</span><span class="t">7:00 a.m. · 11:00 a.m. · 6:00 p.m.</span><span class="n">Thursdays have an extra late morning Mass.</span></li>
-          <li><span class="d">Saturday</span><span class="t">7:00 a.m. · 12:00 noon · 6:00 p.m.</span></li>
+          <li data-days="0"><span class="d">Sunday</span><span class="t">7:00 a.m. · 9:00 a.m. · 11:00 a.m. · 5:00 p.m. · 7:00 p.m.</span></li>
+          <li data-days="1 2 3 4 5"><span class="d">Monday to Friday</span><span class="t">7:00 a.m. · 6:00 p.m.</span></li>
+          <li data-days="4"><span class="d">Thursday</span><span class="t">7:00 a.m. · 11:00 a.m. · 6:00 p.m.</span><span class="n">Thursdays have an extra late morning Mass.</span></li>
+          <li data-days="6"><span class="d">Saturday</span><span class="t">7:00 a.m. · 12:00 noon · 6:00 p.m.</span></li>
         </ul>
         <p style="margin-top:1rem">On the Carmelite feast days the times barely change. The evening Mass is simply celebrated more solemnly.</p>
       </div>
 
-      <div class="card card--dark reveal">
-        <p class="card__meta">Reconciliation</p>
-        <h3>Confession and appointments</h3>
-        <ul class="hours">
+      <details class="card card--dark reveal sched" open>
+        <summary><p class="card__meta">Reconciliation</p>
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1.1-4.6A8 8 0 1 1 21 12z"/></svg>Confession and appointments</h3></summary>
+        <ul class="hours" data-confess="4@07:00,18:00;6@12:00,18:00;0@*">
           <li><span class="d">Thursday</span> <span class="t">During the 7:00 a.m. and 6:00 p.m. Masses</span></li>
           <li><span class="d">Weekend</span> <span class="t">During every Sunday Mass, starting with the Saturday 12:00 noon Mass</span></li>
           <li><span class="d">Personal appointment with a friar</span> <span class="t">Arranged with the office</span></li>
         </ul>
         <p style="margin-top:1rem">There is no fixed schedule for personal guidance. The parish secretary books the appointment and the friar confirms the day and time by WhatsApp.</p>
-      </div>
+      </details>
 
-      <div class="card card--dark reveal">
-        <p class="card__meta">The church</p>
-        <h3>When it is open</h3>
+      <details class="card card--dark reveal sched" open>
+        <summary><p class="card__meta">The church</p>
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 21h16"/><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/><circle cx="14.5" cy="12.5" r=".6" fill="currentColor"/></svg>When it is open</h3></summary>
         <ul class="hours">
           <li><span class="d">Every day, opens</span> <span class="t">6:00 a.m.</span></li>
           <li><span class="d">Monday to Friday, closes</span> <span class="t">9:00 p.m.</span></li>
@@ -465,12 +469,12 @@
           <li><span class="d">Sunday, closes</span> <span class="t">8:30 p.m.</span></li>
         </ul>
         <p style="margin-top:1rem">The Blessed Sacrament Chapel opens at 6:00 a.m., together with the church.</p>
-      </div>
+      </details>
 
-      <div class="card card--dark reveal">
-        <p class="card__meta">Parish office</p>
-        <h3>Office hours</h3>
-        <ul class="hours">
+      <details class="card card--dark reveal sched" open>
+        <summary><p class="card__meta">Parish office</p>
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/></svg>Office hours</h3></summary>
+        <ul class="hours" data-office="1 2 3 4 5@08:00-12:00,14:00-17:30;6@08:00-12:00">
           <li><span class="d">Monday to Friday</span> <span class="t">8:00 a.m. to 12:00 noon and 2:00 to 5:30 p.m.</span></li>
           <li><span class="d">Saturday</span> <span class="t">8:00 a.m. to 12:00 noon</span></li>
           <li><span class="d">WhatsApp</span> <span class="t"><a href="https://wa.me/50379879987" target="_blank" rel="noopener">7987-9987</a></span></li>
@@ -478,7 +482,7 @@
           <li><span class="d">Email</span> <span class="t"><a href="mailto:sjc_parroquia@yahoo.com">sjc_parroquia@yahoo.com</a></span></li>
         </ul>
         <p style="margin-top:1rem">The parish office is the way in for everything: sacraments, church bookings, appointments and groups.</p>
-      </div>
+      </details>
     </div>
   </div>
 </section>
@@ -498,6 +502,9 @@
       <div class="rule"></div>
       <p>Call the parish office and ask for an appointment. The secretary coordinates with one of the friars, and he confirms the day and time with you by WhatsApp or by phone. There is no fixed schedule, precisely so that each person can be seen when they need it.</p>
       <p>Spiritual direction is a personal conversation, not a talk. The friar listens to your situation, helps you make sense of it and guides you: how to learn to pray, how to discern what God is asking, what to do with a specific situation. It is one of the most characteristic works of the Carmel, and here it is done by friars formed in exactly that.</p>
+      <details class="more">
+        <summary><span class="more__o">How to ask, step by step</span><span class="more__c">Show less</span></summary>
+        <div class="more__body">
       <ol class="steps">
         <li>
           <h3>Contact the parish office</h3>
@@ -512,7 +519,9 @@
           <p>He writes or calls to agree on the day and time.</p>
         </li>
       </ol>
-      <p style="margin-top:2rem">Alongside personal direction, the Order runs schools of spirituality, prayer courses and formation weeks in every country of Central America, some of them online.</p>
+      <p style="margin-top:1.6rem">Alongside personal direction, the Order runs schools of spirituality, prayer courses and formation weeks in every country of Central America, some of them online.</p>
+        </div>
+      </details>
     </div>
   </div>
 </section>
@@ -523,35 +532,36 @@
     <h2>Movements, ministries and groups</h2>
     <div class="rule"></div>
     <p class="lede">The parish has more than twenty active groups: liturgical ministries, social outreach, youth communities by age, movements, catechesis and service teams. If you are looking for somewhere to belong, start here.</p>
-    <div class="groups">
+    <p class="swipe-hint" aria-hidden="true">Swipe to see more<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></p>
+    <div class="groups swipe">
       <article class="group reveal">
-        <h3>Youth ministry</h3>
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.4"/><path d="M15.5 14.2A5 5 0 0 1 21 19"/></svg>Youth ministry</h3>
         <p class="group__when">Three communities by age</p>
         <p>Teenagers from 14 to 18, university students from 18 to 25, and young adults from 25 upwards. All of them live the Carmelite youth spirituality.</p>
       </article>
       <article class="group reveal">
-        <h3>Social outreach</h3>
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>Social outreach</h3>
         <p class="group__when">Soup kitchen, every Thursday morning</p>
         <p>Accompanies people living on the street and families with few resources, with projects for schools and for local residential workers too.</p>
       </article>
       <article class="group reveal">
-        <h3>Liturgical ministries</h3>
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v18M7 8h10"/></svg>Liturgical ministries</h3>
         <p class="group__when">At every celebration</p>
         <p>The brothers and sisters who hold up every celebration, from the word and the singing to welcoming whoever walks in.</p>
       </article>
       <article class="group reveal">
-        <h3>Movimiento Salvador del Mundo</h3>
-        <p class="group__when">Monday and Tuesday evenings</p>
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21a6 6 0 0 0 6-6c0-4-3-6-4-10-2 2-2 4-2 5-1-1-2-2-2-4-2 2-4 5-4 9a6 6 0 0 0 6 6z"/></svg>Movimiento Salvador del Mundo</h3>
+        <p class="group__when">Mondays and Tuesdays, 7:00 p.m.</p>
         <p>A large community with a charismatic flavour, with ministries for families and young people: assemblies, retreats and prayer.</p>
       </article>
       <article class="group reveal">
-        <h3>Matrimonios en Victoria</h3>
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="14" r="5"/><circle cx="15" cy="14" r="5"/><path d="M10 6l2-3 2 3"/></svg>Matrimonios en Victoria</h3>
         <p class="group__when">Tuesdays</p>
         <p>Walks with couples and married people, runs retreats and is in charge of the parish marriage preparation.</p>
       </article>
       <article class="group reveal">
-        <h3>Secular Carmel</h3>
-        <p class="group__when">Mondays</p>
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6-5.3-3-5.3 3 1.2-6L3.4 9.3l6-.7z"/></svg>Secular Carmel</h3>
+        <p class="group__when">Mondays, 7:00 p.m.</p>
         <p>Lay people who live the Carmelite charism, are formed as Carmelites and cultivate contemplative prayer.</p>
       </article>
     </div>
@@ -577,35 +587,36 @@
     </div>
   </div>
   <div class="wrap">
-    <div class="grid grid--3" style="margin-top:clamp(2.6rem,6vw,4rem)">
+    <p class="swipe-hint" aria-hidden="true">Swipe to see more<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></p>
+    <div class="grid grid--3 swipe" style="margin-top:clamp(2.6rem,6vw,4rem)">
       <article class="card reveal">
         <p class="card__meta">Christian initiation</p>
-        <h3>Baptisms</h3>
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11z"/></svg>Baptisms</h3>
         <p>With prior formation, the birth certificate and the details of the parents and godparents.</p>
       </article>
       <article class="card reveal">
         <p class="card__meta">Christian initiation</p>
-        <h3>First communion and confirmation</h3>
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h12c0 5-2.7 8-6 8s-6-3-6-8z"/><path d="M12 11v6M8 21h8M10 17h4"/></svg>First communion and confirmation</h3>
         <p>Catechesis programmes that start on different dates each year, following the annual plan.</p>
       </article>
       <article class="card reveal">
         <p class="card__meta">Marriage</p>
-        <h3>Weddings</h3>
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="14" r="5"/><circle cx="15" cy="14" r="5"/><path d="M10 6l2-3 2 3"/></svg>Weddings</h3>
         <p>Marriage file, witnesses and marriage preparation. Worth starting well in advance.</p>
       </article>
       <article class="card reveal">
         <p class="card__meta">Special celebrations</p>
-        <h3>Thanksgiving Masses</h3>
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3c1 1.4 1.5 2.4 1.5 3.2A1.5 1.5 0 0 1 12 7.7a1.5 1.5 0 0 1-1.5-1.5C10.5 5.4 11 4.4 12 3z"/><rect x="9" y="10" width="6" height="11" rx="1"/></svg>Thanksgiving Masses</h3>
         <p>Golden anniversaries, quinceañeras, end of school year Masses and company or institutional celebrations.</p>
       </article>
       <article class="card reveal">
         <p class="card__meta">Formation</p>
-        <h3>Adult catechesis</h3>
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5a2 2 0 0 1 2-2h13v15H6a2 2 0 0 0-2 2V5z"/><path d="M4 20a2 2 0 0 0 2 1h13"/></svg>Adult catechesis</h3>
         <p>For adults who want to receive a sacrament they have not yet received, or to join the community.</p>
       </article>
       <article class="card reveal">
         <p class="card__meta">Use of the church</p>
-        <h3>Booking the church</h3>
+        <h3><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Booking the church</h3>
         <p>People and institutions from outside the parish may request the church with an offering, subject to availability.</p>
       </article>
     </div>
@@ -683,8 +694,8 @@
         <li><span class="d">Email</span> <span class="t"><a href="mailto:sjc_parroquia@yahoo.com">sjc_parroquia@yahoo.com</a></span></li>
       </ul>
       <div class="hero__actions" style="margin-top:2rem">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=13.64368,-89.2807286" target="_blank" rel="noopener">Open in Google Maps</a>
-        <a class="btn btn--outline" href="https://waze.com/ul?ll=13.64368,-89.2807286&amp;navigate=yes" target="_blank" rel="noopener">Navigate with Waze</a>
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=13.64368,-89.2807286" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Open in Google Maps</a>
+        <a class="btn btn--outline" href="https://waze.com/ul?ll=13.64368,-89.2807286&amp;navigate=yes" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Navigate with Waze</a>
       </div>
       <p style="margin-top:1.6rem"><a href="contact.html">See all contact details</a></p>
     </div>
@@ -697,38 +708,38 @@
     <h2 id="faq-title">What people ask us most</h2>
     <div class="rule"></div>
     <div style="margin-top:2rem">
-      <div class="faq-item">
-        <h3>What time is Mass at Parroquia San Juan de la Cruz?</h3>
+      <details class="faq-item" open>
+        <summary><h3>What time is Mass at Parroquia San Juan de la Cruz?</h3></summary>
         <p>On Sunday there is Mass at 7:00, 9:00 and 11:00 in the morning, and at 5:00 and 7:00 in the evening. Monday to Friday at 7:00 in the morning and 6:00 in the evening, with an extra Mass on Thursday at 11:00 in the morning. On Saturday at 7:00 in the morning, at noon and at 6:00 in the evening.</p>
-      </div>
-      <div class="faq-item">
-        <h3>What time does the church open?</h3>
+      </details>
+      <details class="faq-item">
+        <summary><h3>What time does the church open?</h3></summary>
         <p>The church opens every day at 6:00 in the morning. On weekdays it closes at 9:00 p.m., on Saturday after the evening Mass and on Sunday at 8:30 p.m. The Blessed Sacrament Chapel is open from 6:00 a.m.</p>
-      </div>
-      <div class="faq-item">
-        <h3>When can I go to confession?</h3>
+      </details>
+      <details class="faq-item">
+        <summary><h3>When can I go to confession?</h3></summary>
         <p>On Thursdays there are confessions during the 7:00 a.m. and 6:00 p.m. Masses. At the weekend, during every Sunday Mass, starting with the Saturday 12:00 noon Mass. If you would prefer a longer conversation or personal spiritual direction, you can ask for an appointment at the parish office and the secretary will book it with one of the friars.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Can I get married or have my child baptised here?</h3>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Can I get married or have my child baptised here?</h3></summary>
         <p>Yes. The parish welcomes both its own families and people from outside who wish to celebrate here. Each sacrament has its own requirements, and the first step is always to contact the parish office, which holds the requirements, the dates and the friars' diary.</p>
-      </div>
-      <div class="faq-item">
-        <h3>What does it mean that this is a Carmelite parish?</h3>
+      </details>
+      <details class="faq-item">
+        <summary><h3>What does it mean that this is a Carmelite parish?</h3></summary>
         <p>It means the parish is cared for by the Discalced Carmelite friars, an order founded in the sixteenth century by Saint Teresa of Ávila and Saint John of the Cross. Their charism within the Church is contemplation and the spiritual life, so here you will find a community focused on prayer, spiritual formation and personal accompaniment.</p>
-      </div>
-      <div class="faq-item">
-        <h3>How do I ask for spiritual direction?</h3>
+      </details>
+      <details class="faq-item">
+        <summary><h3>How do I ask for spiritual direction?</h3></summary>
         <p>Call the parish office and ask for an appointment. There is no fixed schedule: the secretary coordinates with one of the friars and he confirms the day and time with you by WhatsApp or by phone.</p>
-      </div>
-      <div class="faq-item">
-        <h3>How do I join a group or movement?</h3>
+      </details>
+      <details class="faq-item">
+        <summary><h3>How do I join a group or movement?</h3></summary>
         <p>Every ministry has its own leader, and you can also go to the parish office and say what you would like to do. If you want to serve people who are ill, they will give you the contact for the San Lucas ministry. If you are young and looking for community, the contact for the youth group that matches your age.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Do I call them fray, father or priest?</h3>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Do I call them fray, father or priest?</h3></summary>
         <p>All three are correct. "Fray" comes from the Latin frater, meaning brother, and it is the proper term in mendicant orders such as the Carmelites. Almost all friars are also ordained priests, so calling them father is not wrong either.</p>
-      </div>
+      </details>
     </div>
   </div>
 </section>
@@ -746,7 +757,7 @@
       </div>
       <div>
         <h4>Visit us</h4>
-        <p>Nuevo Cuscatlán, La Libertad<br>El Salvador</p><p style="margin-top:.7rem"><a href="https://maps.app.goo.gl/7B8f5ujfRwYgA8C2A" target="_blank" rel="noopener">View on Google Maps</a><br><a href="https://waze.com/ul?ll=13.64368,-89.2807286&amp;navigate=yes" target="_blank" rel="noopener">Navigate with Waze</a></p><p style="margin-top:.7rem"><a href="tel:+50322427582">2242-7582</a><br><a href="mailto:sjc_parroquia@yahoo.com">sjc_parroquia@yahoo.com</a></p>
+        <p>Nuevo Cuscatlán, La Libertad<br>El Salvador</p><p style="margin-top:.7rem"><a href="https://maps.app.goo.gl/7B8f5ujfRwYgA8C2A" target="_blank" rel="noopener">View on Google Maps</a><br><a href="https://waze.com/ul?ll=13.64368,-89.2807286&amp;navigate=yes" target="_blank" rel="noopener">Navigate with Waze</a></p><p style="margin-top:.7rem"><a href="https://wa.me/50379879987" target="_blank" rel="noopener">WhatsApp 7987-9987</a><br><a href="tel:+50322427582">Phone 2242-7582</a><br><a href="mailto:sjc_parroquia@yahoo.com">sjc_parroquia@yahoo.com</a></p>
       </div>
       <div>
         <h4>Church hours</h4>
@@ -838,6 +849,6 @@
     </div>
   </div>
 </footer>
-<script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/main.js?v=20261009" defer></script>
 </body>
 </html>
