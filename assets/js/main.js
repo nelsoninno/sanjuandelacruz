@@ -55,6 +55,7 @@
     label: 'Today at the parish',
     days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
     mass: 'Mass', confess: 'Mass and confession', next: 'Next Mass', nextC: 'Next Mass, with confession',
+    now: 'Under way now', nowC: 'Under way, with confession',
     none: 'No more Masses today.', tomorrow: function (d, t) { return 'Tomorrow, ' + d + ', the first Mass is at ' + end(t); },
     allC: 'Confession during every Mass today.',
     open: 'Parish office: open now', closed: 'Parish office: closed now'
@@ -62,6 +63,7 @@
     label: 'Hoy en la parroquia',
     days: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
     mass: 'Misa', confess: 'Misa y confesiones', next: 'Próxima misa', nextC: 'Próxima misa, con confesiones',
+    now: 'En curso ahora', nowC: 'En curso, con confesiones',
     none: 'Ya no hay más misas hoy.', tomorrow: function (d, t) { return 'Mañana, ' + d.toLowerCase() + ', la primera misa es a las ' + end(t); },
     allC: 'Hoy hay confesiones durante todas las misas.',
     open: 'Oficina parroquial: abierta ahora', closed: 'Oficina parroquial: cerrada ahora'
@@ -121,8 +123,14 @@
     return false;
   };
 
-  var today = massesOn(day), next = -1;
-  for (var i = 0; i < today.length; i++) if (today[i].at > mins) { next = i; break; }
+  /* a Mass that started less than RUN minutes ago is "under way", not past:
+     someone checking at 6:04 p.m. can still walk in to the 6:00 p.m. Mass */
+  var RUN = 45;
+  var today = massesOn(day), next = -1, now = -1;
+  for (var i = 0; i < today.length; i++) {
+    if (today[i].at <= mins && mins < today[i].at + RUN) now = i;
+    if (next < 0 && today[i].at > mins) next = i;
+  }
 
   var list = card.querySelector('.today__list'), html = '';
   /* when every Mass of the day has confessions (Sundays), say it once in a
@@ -130,8 +138,8 @@
   var all = today.length > 0 && today.every(function (ms) { return withConf(ms.at); });
   today.forEach(function (ms, i) {
     var c = !all && withConf(ms.at);
-    var cls = i === next ? 'is-next' : (ms.at <= mins ? 'is-past' : '');
-    var tag = i === next ? (c ? T.nextC : T.next) : (c ? T.confess : T.mass);
+    var cls = i === now ? 'is-now' : i === next ? 'is-next' : (ms.at <= mins ? 'is-past' : '');
+    var tag = i === now ? (c ? T.nowC : T.now) : i === next ? (c ? T.nextC : T.next) : (c ? T.confess : T.mass);
     html += '<li class="' + cls + '"><b>' + ms.label + '</b><span class="tag">' + tag + '</span></li>';
   });
   list.innerHTML = html;
@@ -139,7 +147,7 @@
 
   var note = card.querySelector('.today__note'), msg = [];
   if (all) msg.push(T.allC);
-  if (next < 0) {
+  if (next < 0 && now < 0) {
     var tm = massesOn((day + 1) % 7);
     msg.push(T.none + (tm.length ? ' ' + T.tomorrow(T.days[(day + 1) % 7], tm[0].label) : ''));
   }

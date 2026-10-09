@@ -199,6 +199,11 @@ hr{border:0;border-top:1px solid var(--line);margin:2.5rem 0}
 .today__list .is-past{opacity:.42}
 .today__list .is-next b{color:var(--gold)}
 .today__list .is-next .tag{color:var(--ink);font-weight:600}
+.today__list .is-now b{color:var(--gold)}
+.today__list .is-now .tag{color:var(--ink);font-weight:600}
+.today__list .is-now .tag::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--gold);margin-right:.4rem;vertical-align:.08em;animation:hoyPulse 1.8s ease-in-out infinite}
+@keyframes hoyPulse{50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.today__list .is-now .tag::before{animation:none}}
 .today__note{font-size:.88rem;color:var(--ink);margin-top:.45rem;line-height:1.5}
 .today__office{
   font-size:.8rem;color:var(--muted);margin-top:.75rem;padding-top:.7rem;
